@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emoto Support Platform</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">114 Healthy x Happy · 第九屆 · 佳作獎</p>
+          <h1>Emoto 線上心理支持平台</h1>
+        </div>
+        <a class="source-pill" href="https://incubation.ntunhs.edu.tw/tab/528/id/1834" target="_blank" rel="noreferrer">
+          <span>比賽來源</span>
+          <strong>Healthy x Happy 2025 第九屆決賽獲獎名單</strong>
+        </a>
+      </header>
+
+      <section class="metrics" aria-label="平台摘要">
+        <article class="metric">
+          <span>等待支持</span>
+          <strong id="metric-queue">18</strong>
+          <small>平均等待 6 分鐘</small>
+        </article>
+        <article class="metric amber">
+          <span>高關懷訊號</span>
+          <strong id="metric-risk">4</strong>
+          <small>需先做安全分流</small>
+        </article>
+        <article class="metric">
+          <span>可用支持者</span>
+          <strong id="metric-helpers">27</strong>
+          <small>8 位可立即接案</small>
+        </article>
+        <article class="metric dark">
+          <span>完成回訪</span>
+          <strong id="metric-followup">72%</strong>
+          <small>本週支持成效追蹤</small>
+        </article>
+      </section>
+
+      <section class="workspace">
+        <aside class="panel intake-panel" aria-label="情緒登記">
+          <div class="panel-head">
+            <p>情緒登記</p>
+            <button id="new-entry" class="ghost-button" type="button">新增</button>
+          </div>
+          <div class="entry-list" id="entry-list"></div>
+        </aside>
+
+        <section class="panel match-panel" aria-label="支持媒合">
+          <div class="panel-head">
+            <p>支持媒合</p>
+            <div class="segmented" aria-label="媒合模式">
+              <button class="segment active" data-mode="fit" type="button">契合</button>
+              <button class="segment" data-mode="fast" type="button">最快</button>
+              <button class="segment" data-mode="risk" type="button">關懷</button>
+            </div>
+          </div>
+
+          <div class="selected-entry" id="selected-entry"></div>
+          <div class="match-grid" id="match-grid"></div>
+        </section>
+
+        <aside class="panel care-panel" aria-label="危機分流">
+          <div class="panel-head">
+            <p>危機分流</p>
+            <span class="live-dot">監測中</span>
+          </div>
+          <div class="safety-card" id="safety-card"></div>
+          <div class="action-stack" id="action-stack"></div>
+          <div class="source-box">
+            <span>獎項來源</span>
+            <p>Healthy x Happy 2025 第九屆決賽獲獎名單，佳作獎，Emoto，情緒零時差：Emoto 線上心理支持平台。</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="lower-grid">
+        <article class="panel script-panel">
+          <div class="panel-head">
+            <p>支持腳本</p>
+            <button id="script-button" class="ghost-button" type="button">生成回覆</button>
+          </div>
+          <div class="script-box" id="script-box"></div>
+        </article>
+
+        <article class="panel progress-panel">
+          <div class="panel-head">
+            <p>成效追蹤</p>
+            <button id="follow-button" class="ghost-button" type="button">新增回訪</button>
+          </div>
+          <div class="progress-list" id="progress-list"></div>
+        </article>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
