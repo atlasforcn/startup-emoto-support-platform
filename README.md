@@ -1,5 +1,21 @@
 # Emoto Support Platform
 
+## 快速看懂
+
+![startup-emoto-support-platform 功能截圖](docs/preview.png)
+
+- 線上 Demo：https://atlasforcn.github.io/startup-emoto-support-platform/
+- 這個原型在做什麼：把 Emoto 做成線上心理支持媒合與追蹤平台。
+- 特色定位：特色是將情緒狀態、支持資源、陪伴任務與追蹤紀錄放在同一個照護流程裡。
+- 操作流程：記錄目前情緒與壓力狀態 → 媒合合適支持方式或陪伴任務 → 追蹤回饋、下一步提醒與風險訊號
+
+<details>
+<summary>展開完整功能流程截圖</summary>
+
+![startup-emoto-support-platform 完整功能流程截圖](docs/flow.png)
+
+</details>
+
 這個 repo 是依據 `Emoto` 在全國大專校院 Healthy x Happy 創新創業競賽中的得獎作品概念做出的前端原型。原型把「情緒零時差：Emoto 線上心理支持平台」實作成一個情緒登記、匿名支持媒合、陪伴時段與危機分流工作台。
 
 ## 比賽來源
