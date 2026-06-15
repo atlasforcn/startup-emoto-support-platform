@@ -7,6 +7,40 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- repo-snapshot:start -->
+    <section class="repo-snapshot repo-snapshot--chat" aria-label="專案辨識預覽：Emoto" style="--snap-bg: #f5f0f2; --snap-bg-2: #e8dfe3; --snap-ink: #2b2529; --snap-muted: #6f6369; --snap-accent: #c95f75; --snap-accent-2: #4b9a8e;">
+      <div class="snapshot-copy">
+        <p class="snapshot-kicker">Emotional support desk</p>
+        <div class="snapshot-name">Emoto</div>
+        <p class="snapshot-tagline">情緒溫度、支持任務和陪伴回覆並列，讓心理支持平台從截圖就有自己的語氣。</p>
+        <div class="snapshot-chips" aria-label="核心辨識元素">
+        <span>情緒溫度</span>
+        <span>支持任務</span>
+        <span>陪伴回覆</span>
+        </div>
+      </div>
+      <div class="snapshot-scene" aria-hidden="true">
+        <div class="snapshot-device">
+          <div class="snapshot-device-head">
+            <span>Support room</span>
+            <strong>今晚需要安定對話</strong>
+          </div>
+          <div class="snapshot-visual snapshot-visual--chat">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="snapshot-data-row">
+          <span><b>4</b>需求</span>
+          <span><b>12m</b>回覆</span>
+          <span><b>76</b>穩定度</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- repo-snapshot:end -->
+    <div class="demo-boundary" role="note">
+      <strong>Prototype</strong>
+      <span>靜態互動原型；畫面資料、評分、AI、金流、醫療、法律與安全流程皆為示範，不代表原團隊官方產品或實際服務。</span>
+    </div>
     <main class="app-shell">
       <header class="topbar">
         <div>
@@ -72,10 +106,10 @@
           </div>
           <div class="safety-card" id="safety-card"></div>
           <div class="action-stack" id="action-stack"></div>
-          <div class="source-box">
-            <span>獎項來源</span>
+          <details class="source-box">
+            <summary>獎項來源</summary>
             <p>Healthy x Happy 2025 第九屆決賽獲獎名單，佳作獎，Emoto，情緒零時差：Emoto 線上心理支持平台。</p>
-          </div>
+          </details>
         </aside>
       </section>
 
